@@ -13,26 +13,40 @@ Component-Based Architecture: The scene is broken down into reusable React compo
 Project Structure
 Here is an overview of the project's file structure, tailored for the farm scene display:
 
-.
 ├── public/
 │   ├── models/
-│   │   ├── barn.glb      # Main barn model
-│   │   ├── tractor.glb   # Decorative tractor model
-│   │   └── silo.glb      # Decorative silo model
+│   │   ├── 
+│   │   ├── 
+│   │   └── 
+│   ├── textures/
+│   │   └── 
 │   └── index.html
 │
 ├── src/
+│   ├── assets/
+│   │   ├── models/
+│   │   │   └── player.glb
+│   │   └── textures/
+│   │       └── ground_diffuse.jpg
+│   │
 │   ├── components/
-│   │   ├── Barn.jsx        # Component to load and display the barn
-│   │   ├── Environment.jsx # Sets up lighting and background
-│   │   ├── UI.jsx          # User interface elements
-│   │   └── Controls.jsx    # Camera and interaction controls
+│   │   ├── Player.jsx
+│   │   ├── Enemy.jsx
+│   │   ├── Environment.jsx
+│   │   ├── UI.jsx
+│   │   └── Controls.jsx
 │   │
 │   ├── scenes/
-│   │   └── FarmScene.jsx   # Main scene that assembles all components
+│   │   ├── GameScene.jsx
+│   │   └── MenuScene.jsx
 │   │
-│   ├── App.jsx             # Main application component
-│   └── index.jsx           # Entry point of the React application
+│   ├── hooks/
+│   │   ├── usePlayerControls.js
+│   │   └── useGameLogic.js
+│   │
+│   ├── App.jsx
+│   ├── index.jsx
+│   └── styles.css
 │
 ├── package.json
 └── vite.config.js
